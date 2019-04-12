@@ -12,7 +12,7 @@ const ArticlePage = ({ match }) => {
 
     useEffect(() => {
         const fetchArticleInfo = async () => {
-            const result = await fetch('http://localhost:8000/articles/' + name);
+            const result = await fetch('/api/articles/' + name);
             const body = await result.json();
             setArticleInfo(body);
         };
