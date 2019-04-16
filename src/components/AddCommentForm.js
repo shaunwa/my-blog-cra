@@ -20,7 +20,8 @@ const AddCommentForm = ({ articleName, setArticleInfo }) => {
     };
 
     return (
-        <div>
+        <div id="add-comment-form">
+            <h3>Add a Comment</h3>
             <label>
                 Name:
                 <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
